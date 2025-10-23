@@ -8,6 +8,9 @@ The Gold Layer is the business-level data representation, structured to support 
 - **Purpose**: Stores customer details enriched with demographic and geographic data.
 - **Columns**:
 
-| Column Name |Datatype| Description |
+| Column Name | Datatype | Description |
 |---|---|---|
 | customer_key | INT | Surrogate key identifying each customer record in the dimension table. | 
+| customer_id | INT | Unique numerical identifier assigned to each customer. |
+| customer_number | NVARCHAR(50) | Alphanumeric identifier representing the customer, used for tracking and referencing. |
+| first_name | NVARCHAR(50) | The customer's firstname, as recorded in the system. |
